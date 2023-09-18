@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-09-2023 a las 07:09:58
+-- Tiempo de generación: 18-09-2023 a las 18:28:28
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -46,7 +46,8 @@ CREATE TABLE `tareas` (
 INSERT INTO `tareas` (`id`, `titulo`, `descripcion`, `fecha_limite`, `completado`, `fecha_asignacion`, `asignado_a`, `asignado_por`, `Prioridades`) VALUES
 (1, 'hola', 'wuisn\n', '0000-00-00', 1, '0000-00-00', NULL, NULL, ''),
 (2, 'esclavizar a arango', 'eódine\n', '0000-00-00', 1, NULL, NULL, NULL, ''),
-(3, 'peodin', 'epiodn\n', '0000-00-00', 0, '0000-00-00', 'miguel arango', 'julio luvo', '');
+(3, 'peodin', 'epiodn\n', '0000-00-00', 0, '0000-00-00', 'miguel arango', 'julio luvo', ''),
+(4, 'dwq.n', 'wqodin\n', '12', 0, '12', '12', '12', 'BAJA');
 
 --
 -- Índices para tablas volcadas
@@ -66,7 +67,7 @@ ALTER TABLE `tareas`
 -- AUTO_INCREMENT de la tabla `tareas`
 --
 ALTER TABLE `tareas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
