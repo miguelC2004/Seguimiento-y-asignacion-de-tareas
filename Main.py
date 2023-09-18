@@ -34,7 +34,7 @@ def agregar_tarea():
         return
 
     cursor = conexion.cursor()
-    insert_query = "INSERT INTO tareas (titulo, descripcion, fecha_limite, fecha_asignacion, persona_asignada, persona_asignadora, nivel_prioridad, completado) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+    insert_query = "INSERT INTO tareas (titulo, descripcion, fecha_limite, fecha_asignacion, asignado_a, asignado_por, Prioridades, completado) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
     try:
         cursor.execute(insert_query, (titulo, descripcion, fecha_limite, fecha_asignacion, persona_asignada, persona_asignadora, nivel_prioridad, False))
         conexion.commit()
